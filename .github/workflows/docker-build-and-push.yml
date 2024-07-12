@@ -36,6 +36,7 @@ jobs:
         push: true
         tags: |
           ghcr.io/${{ steps.extract_repo.outputs.repo }}:${{ steps.extract_date.outputs.date }}
+          ghcr.io/${{ steps.extract_repo.outputs.repo }}:latest
 
     - name: Log out of GitHub Container Registry
       run: docker logout ghcr.io
