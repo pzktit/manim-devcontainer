@@ -12,8 +12,6 @@ jobs:
     permissions:
       contents: read
       packages: write
-    env:
-      DATE_TAG: ${{ steps.set_date.outputs.date }}
 
     steps:
       - name: Check out the repo
