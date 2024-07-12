@@ -22,4 +22,4 @@ RUN apt-get update -qq \
 USER vscode:vscode
 WORKDIR /home/vscode
 ENV PATH="/home/vscode/.local/bin:${PATH}"        
-RUN pip install --upgrade pip && pip install ipykernel manim manim-slides manim-code-blocks-redux manim-data-structures manim-fontawesome
+RUN pip install --upgrade pip && pip install ipykernel manim manim-slides manim-code-blocks-redux manim-fontawesome
